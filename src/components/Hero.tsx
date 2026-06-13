@@ -7,9 +7,10 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown, Calendar, MapPin, Music, Volume2, VolumeX, Sparkles } from 'lucide-react';
 import { rajasthaniFolkSynth, FolkBeatType } from '../utils/music';
+import rajasPalaceImg from '../assets/images/rajas_palace_1779739137510.png';
 
-// Correct absolute path for the generated image
-const HERO_IMAGE_URL = '/src/assets/images/rajas_palace_1779739137510.png';
+// Resolve image at compile-time to allow proper production asset bundling
+const HERO_IMAGE_URL = rajasPalaceImg;
 
 interface HeroProps {
   onScrollToRsvp: () => void;
