@@ -11,6 +11,7 @@ import Hero from './components/Hero';
 import Timeline from './components/Timeline';
 import RsvpForm from './components/RsvpForm';
 import AdminDashboard from './components/AdminDashboard';
+import jharokhaLakeImg from './assets/images/jharokha_lake_1779739155204.png';
 
 export default function App() {
   const [isFriendsAuthorized, setIsFriendsAuthorized] = useState<boolean>(false);
@@ -164,7 +165,7 @@ export default function App() {
                 <div className="relative w-full h-full bg-[#faf8f4] overflow-hidden rounded-t-[130px] rounded-b-2xl">
                   {/* Generated Lake Overlook Image */}
                   <img 
-                    src="/src/assets/images/jharokha_lake_1779739155204.png" 
+                    src={jharokhaLakeImg} 
                     alt="Gaj Kesari Bikaner Jharokha View" 
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transform scale-102 hover:scale-105 transition-transform duration-[1.5s]"
